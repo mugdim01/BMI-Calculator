@@ -118,7 +118,23 @@ button.addEventListener('click', function() {
                 const removeMaxBMIdecimals = Number(maxBMI.toFixed(1));
                 document.getElementById('idealna-masa-broj').innerText = `${removeMinBMIdecimals} - ${removeMaxBMIdecimals}`;
 
-                    
+                    function doZdravogRaspona() {
+                        const tjelesnaMasaUBroj = Number(tjelesnaMasa.value);
+                        
+                        if (tjelesnaMasaUBroj < minBMI) {
+                            const ispodGranice = minBMI - tjelesnaMasaUBroj;
+
+                            document.getElementById('do-zdravog-raspona-broj').innerText = `${ispodGranice.toFixed(1)}`;
+                            document.getElementById('do-zdravog-raspona-komentar').innerText = `Do zdravog raspona nedostaje: ${ispodGranice.toFixed(1)} kg`;
+                        } else if (tjelesnaMasaUBroj > maxBMI) {
+                            const prekoGranice = tjelesnaMasaUBroj - maxBMI;
+
+                            document.getElementById('do-zdravog-raspona-broj').innerText = `${prekoGranice.toFixed(1)}`;
+                            document.getElementById('do-zdravog-raspona-komentar').innerText = `Do zdravog raspona morate smršati: ${prekoGranice.toFixed(1)} kg`;
+                        }
+                    }
+
+                    doZdravogRaspona();
             }
 
        idealnaMasa();
