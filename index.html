@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tjelesna Masa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+            <h1>Tjelesna Masa</h1>
+            <img src="slike/slika1.png" alt="logo">
+    </header>
+
+    <main>
+
+    <div class="container">
+    
+    <div class="osobniPodaci">
+
+    <p>Odaberi svoj spol:</p>
+    <label for="muskispol">Muški:</label>
+    <input type="radio" id="muskispol" name="spol" required> 
+    <label for="zenskispol">Ženski:</label>
+    <input type="radio" id="zenskispol" name="spol" required> 
+
+    <p>Odaberi svoje godine:</p>
+    <select name="age" id="godine" class="ljudskeGodine" required></select>
+    
+    <p>Razina aktivnosti:</p>
+
+    <button id="sjedilacka-btn" class="aktivnost-btn">Sjedilačka</button>
+    <button id="lagana-btn" class="aktivnost-btn">Lagana</button>
+    <button id="umjerena-btn" class="aktivnost-btn">Umjerena</button>
+    <button id="aktivna-btn" class="aktivnost-btn">Aktivna</button>
+    <button id="intenzivna-btn" class="aktivnost-btn">Intenzivna</button>
+
+    </div> 
+
+    <div class="tjelesneMjere">
+        <p>Unesite svoju visinu:</p>
+        <input type="number" id="visina" class="ljudskaVisina" min="1" placeholder="Visina (cm)" required>
+        <p>Unesite svoju tjelesnu masu:</p>
+        <input type="number" class="ljudskaMasa" id="tjelesnaMasa" min="1" placeholder="Masa (kg)" required>
+        <p>Unesite svoj obim struka:</p>
+        <input type="number" id="obimStruka" class="ljudskiObim" min="1" placeholder="Obim struka (cm)" required> <br>
+        <br>
+        <button id="calculate-btn" class="aktivnost-btn">Izračunaj</button> <br>
+        <br>
+        <div id="error-message"></div>
+    </div>
+
+    <div class="indeksTjelesneMase">
+        <p>Indeks tjelesne mase (BMI)</p>
+        <p id="tjelesna-masa-broj" class="normalnaTjelesnaMasa">22.8</p>
+        <p id="tjelesna-masa-komentar" class="normalnaTjelesnaMasaTekst">NORMALNA TJELESNA MASA</p>
+        <p id="tjelesna-masa-tekst">Tvoja tjelesna masa je u zdravom rasponu. Nastavi <br>
+         održavati uravnoteženu ishranu i fizičku aktivnost.</p>
+        
+
+         <div class="border">
+            <div class="zone firstBorder"></div>
+            <div class="zone secondBorder"></div>
+            <div class="zone thirdBorder"></div>
+            <div class="zone fourthBorder"></div>
+            <div class="zone fifthBorder"></div>
+         </div>
+
+          <div class="borderText">
+                <p>16</p>
+                <p>18.5</p>
+                <p>25</p>
+                <p>30</p>
+                <p>35</p>
+                <p>40</p>
+            </div>
+
+    </div>
+
+    <div class="karticePrviDio">
+        <div class="kartica1">
+            <div class="karticaLogo">🔥</div>
+            <p>BAZALNI METABOLIZAM</p>
+            <p id="bazalni-metabolizam-broj" class="karticabroj">1674</p>
+            <p class="karticatekst">kcal/dan (BMR)</p>
+        </div>
+        <div class="kartica2">
+            <div class="karticaLogo">⚡</div>
+            <p>DNEVNE KALORIJE</p>
+            <p id="dnevne-kalorije-broj" class="karticabroj">2009</p>
+            <p class="karticatekst">kcal/dan (TDEE)</p>
+        </div>
+        <div class="kartica3">
+            <div class="karticaLogo">⚖️</div>
+            <p>IDEALNA MASA</p>
+            <p id="idealna-masa-broj" class="karticabroj">57-76</p>
+            <p class="karticatekst">kg (zdrav raspon)</p>
+        </div>
+    </div>
+
+    <div class="karticeDrugiDio">
+        <div class="kartica4">
+            <div class="karticaLogo">📏</div>
+            <p>OMJER STRUK/VISINA</p>
+            <p id="omjer-struk-broj" class="karticabroj">0.46</p>
+            <p id="omjer-struk-komentar" class="karticatekst">Odličan omjer</p>
+        </div>
+        <div class="kartica5">
+            <div class="karticaLogo">🎯</div>
+            <p>DO ZDRAVOG RASPONA</p>
+            <p class="karticabroj">______</p>
+            <p class="karticatekst">Unutar zdravog raspona</p>
+        </div>
+        <div class="kartica6">
+            <div class="karticaLogo">💧</div>
+            <p>DNEVNI UNOS VODE</p>
+            <p id="unos-vode-broj" class="karticabroj">2.3</p>
+            <p class="karticatekst">litara preporučeno</p>
+        </div>
+    </div>
+
+    </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

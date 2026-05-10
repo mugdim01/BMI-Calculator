@@ -1,0 +1,220 @@
+body {
+    background-color: #1b2d1e;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f1f8f2;
+}
+
+/*.kartica, .osobniPodaci, .tjelesneMjere {
+    background-color: #dde8ff;
+}*/ 
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    height: 70px;
+}
+
+.container {
+    font-size: 18px;
+}
+
+header {
+    font-size: 20px;
+}
+
+.ljudskeGodine {
+    height: 30px;
+    width: 50px;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+.aktivnost-btn {
+    background-color: #4caf50;
+    font-weight: bold;
+    border-radius: 100px;
+    height: 30px;
+}
+
+.osobniPodaci {
+    border: 5px solid black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.ljudskaVisina, .ljudskaMasa, .ljudskiObim {
+    width: 150px;
+    border: 5px solid white;
+}
+
+.tjelesneMjere {
+    border: 5px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.normalnaTjelesnaMasa {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.normalnaTjelesnaMasaTekst {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.indeksTjelesneMase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.border {
+    display: flex;
+    width: 700px;
+    height: 20px;
+    overflow: hidden;
+}
+
+
+.zone {
+    height: 100%;
+    
+}
+
+.firstBorder {
+    width: 18.5%;
+    background-color: rgb(10, 101, 236);
+}
+
+.secondBorder {
+    width: 25%;
+    background-color: #4caf50;
+}
+
+.thirdBorder {
+    width: 30%;
+    background-color: yellow;
+}
+
+.fourthBorder {
+    width: 35%;
+    background-color: pink;
+}
+
+.fifthBorder {
+    width: 40%;
+    background-color: red;
+}
+
+.borderText {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    justify-content: space-between; 
+}
+
+.karticePrviDio, .karticeDrugiDio {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.kartica1 {
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 20%;
+    height: 150px;
+    margin-top: 50px;
+    background-color: #2d4a32;
+}
+
+.karticabroj {
+    font-weight: bold;
+}
+
+.karticaLogo {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.karticatekst {
+    margin-top: -20px;
+}
+
+
+
+.kartica2 {
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 20%;
+    height: 150px;
+    margin-top: 50px;
+    background-color: #2d4a32;
+
+}
+
+
+.kartica3 {
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 20%;
+    height: 150px;
+    margin-top: 50px;
+    background-color: #2d4a32;
+}
+
+.kartica4 {
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 20%;
+    height: 150px;
+    margin-top: 50px;
+    background-color: #2d4a32;
+}
+
+.kartica5 {
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 20%;
+    height: 150px;
+    margin-top: 50px;
+    background-color: #2d4a32;
+}
+
+.kartica6 {
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 20%;
+    height: 150px;
+    margin-top: 50px;
+    background-color: #2d4a32;
+}
+
+.active {
+    background-color: #a5d6a7;
+    color: #1b2d1e;
+}
+
+.kartica1:hover, .kartica2:hover, .kartica3:hover, .kartica4:hover, .kartica5:hover, .kartica6:hover {
+    transform: scale(1.10);
+    transition: transform 2s ease-in-out;
+}
+
+.aktivnost-btn:hover {
+    background-color: #a5d6a7;
+}
+
+
+
